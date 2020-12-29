@@ -46,7 +46,7 @@ public class Client {
 
     }
 
-    public static void main(String[] args){
-        Client client = new Client(8088);
-    }
+//    public static void main(String[] args){
+//        Client client = new Client(8088);
+//    }
 }
