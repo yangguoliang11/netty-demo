@@ -1,6 +1,7 @@
 package cn.jvtd.netty.demo;
 
 import cn.jvtd.netty.demo.thread.MyThread;
+import cn.jvtd.netty.demo.thread.SyncTwoThread;
 import cn.jvtd.netty.demo.thread.TwoThread;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -51,6 +52,14 @@ public class DemoApplication {
         a.start();
         b.start();
         c.start();
+
+        SyncTwoThread aa = new SyncTwoThread("A");
+        SyncTwoThread bb = new SyncTwoThread("B");
+        SyncTwoThread cc = new SyncTwoThread("C");
+
+        aa.start();
+        bb.start();
+        cc.start();
 
 
     }
