@@ -14,7 +14,7 @@ import java.util.Optional;
 @Component
 public class TestTread {
 
-    @PostConstruct
+
     public void test() throws InterruptedException {
         String str = LocalDateTime.now().toString();
 
